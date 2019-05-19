@@ -4,6 +4,3 @@ services:
 
 before_install:
   - docker build -t ganeshgaitonde/docker-react -f Dockerfile.dev .
-
-script:
-  - docker run ganeshgaitonde/docker-react npm run test -- --coverage
